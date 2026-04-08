@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0f0f0f;
+  --foreground: #ffffff;
+  font-size: 18px; /* +4pt from default 14px (16px base) */
+}
+
+html {
+  font-size: 18px; /* Increase base font size for entire app */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-size: 1rem; /* Use rem for scalability */
+}
