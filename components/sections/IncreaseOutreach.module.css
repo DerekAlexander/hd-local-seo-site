@@ -28,9 +28,10 @@
 }
 
 .images img {
-  width: 33%;
-  height: auto;
-  border-radius: 8px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
   object-fit: cover;
 }
 
@@ -40,7 +41,8 @@
     gap: 16px;
   }
   .images img {
-    width: 100%;
+    width: 250px;
+    height: 250px;
   }
   .title {
     font-size: 32px;

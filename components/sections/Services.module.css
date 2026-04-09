@@ -34,12 +34,20 @@
   border: 1px solid rgba(217, 217, 217, 1);
   border-radius: 8px;
   padding: 24px;
-  width: 18%;
   min-width: 260px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.cardWide {
+  flex: 0 1 35%;
+}
+
+.cardNarrow {
+  flex: 0 1 28%;
 }
 
 .cardTop {
@@ -179,15 +187,22 @@
 }
 
 @media (max-width: 1440px) {
-  .card {
-    width: 30%;
+  .cardWide {
+    flex-basis: 45%;
+  }
+
+  .cardNarrow {
+    flex-basis: 30%;
   }
 }
 
 @media (max-width: 768px) {
-  .card {
+  .card,
+  .cardWide,
+  .cardNarrow {
     width: 100%;
     min-width: 100%;
+    flex-basis: 100%;
   }
   .cards {
     flex-direction: column;

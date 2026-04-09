@@ -79,7 +79,10 @@ export default function Services() {
       <h2 className={styles.title}>Services</h2>
       <div className={styles.cards}>
         {pricingCards.map((card, i) => (
-          <div key={i} className={styles.card}>
+          <div
+            key={i}
+            className={`${styles.card} ${i < 2 ? styles.cardWide : styles.cardNarrow}`}
+          >
             <div className={styles.cardTop}>
               <h3 className={styles.cardTitle}>{card.title}</h3>
               <div className={styles.priceRow}>
