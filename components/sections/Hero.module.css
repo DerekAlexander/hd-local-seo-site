@@ -135,6 +135,53 @@
   color: rgba(117, 117, 117, 1);
 }
 
+.searchRow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.submitButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 195, 72, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(27, 52, 0, 1);
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-family: var(--font-family-blinker);
+}
+
+.error {
+  color: #f44336;
+  padding: 10px;
+  text-align: center;
+  font-family: var(--font-family-blinker);
+}
+
+.scoreCardContainer {
+  width: 100%;
+  padding: 20px;
+}
+
 @media (max-width: 768px) {
   .heroImageContainer {
     height: 300px;
@@ -168,6 +215,15 @@
 
   .toolHeading {
     font-size: 24px;
+  }
+
+  .searchRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submitButton {
+    width: 100%;
   }
 }
 
