@@ -20,9 +20,6 @@ and dedicated support. You are not
 another number in the sea of clients to us, you're a human being trying to be successful.`}
         </p>
       </div>
-      <div className={styles.imageSide}>
-        <img src="/images/hands-with-message-1-203.png" alt="Hands with message" />
-      </div>
     </section>
   );
 }
