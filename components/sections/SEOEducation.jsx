@@ -5,17 +5,17 @@ import styles from './SEOEducation.module.css';
 
 const cards = [
   {
-    icon: '/images/icon-165.svg',
+    icon: '/images/icon-35.svg',
     title: 'What Is SEO?',
     description: 'SEO (Search Engine Optimization) is how your business shows up when people Google "roofing near me" or "emergency plumber." It\'s free visibility—no ads, no monthly bills to Google.',
   },
   {
-    icon: '/images/icon-172.svg',
+    icon: '/images/icon-42.svg',
     title: 'Why It Matters',
     description: 'Google Ads (PPC):\nYou pay every time someone clicks. Stop paying, visibility stops.\nSEO: You earn visibility by fixing your website and online presence. Once it works, it works.',
   },
   {
-    icon: '/images/icon-179.svg',
+    icon: '/images/icon-49.svg',
     title: 'Your visibility counts',
     description: 'Most local service businesses ignore SEO or do it wrong. They either:\n- Have a dead website no one can find\n- Have good content but horrible technical setup\n- Get buried by competitors who actually invested',
   },
@@ -25,7 +25,7 @@ export default function SEOEducation() {
   return (
     <section className={styles.section}>
       <Image
-        src="/images/rectangle-69-160.png"
+        src="/images/rectangle-69-30.png"
         alt="Section background"
         width={1920}
         height={200}
@@ -50,7 +50,7 @@ export default function SEOEducation() {
         </div>
         <div className={styles.bottomSection}>
           <Image
-            src="/images/analyze-data-5-184.png"
+            src="/images/analyze-data-5-54.png"
             alt="Analytics"
             width={40}
             height={40}

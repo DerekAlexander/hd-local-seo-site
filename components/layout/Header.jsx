@@ -9,7 +9,7 @@ export default function Header() {
       </div>
       <header className={styles.header}>
         <Image
-          src="/images/logoblue-1-205.png"
+          src="/images/logoblue-1-6.png"
           alt="HydrodubShop Logo"
           width={180}
           height={50}

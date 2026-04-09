@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.logoContainer}>
         <Image
-          src="/images/footer-logo-1-134.png"
+          src="/images/footer-logo-1-216.png"
           alt="Footer Logo"
           width={120}
           height={40}
@@ -14,9 +14,9 @@ export default function Footer() {
         />
       </div>
       <div className={styles.navIcons}>
-        <Image src="/images/home-150.png" alt="Home" width={24} height={24} />
-        <Image src="/images/mission-149.png" alt="Mission" width={24} height={24} />
-        <Image src="/images/portfolio-151.png" alt="Portfolio" width={24} height={24} />
+        <Image src="/images/home-217.png" alt="Home" width={24} height={24} />
+        <Image src="/images/mission-218.png" alt="Mission" width={24} height={24} />
+        <Image src="/images/portfolio-219.png" alt="Portfolio" width={24} height={24} />
       </div>
       <div className={styles.links}>
         <a href="#about" className={styles.link}>about</a>

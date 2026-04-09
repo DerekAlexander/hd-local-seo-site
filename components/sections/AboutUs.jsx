@@ -5,13 +5,9 @@ import styles from './AboutUs.module.css';
 export default function AboutUs() {
   return (
     <section className={styles.section}>
-      <div className={styles.imageSide}>
-        <img src="/images/hands-with-message-1-156.png" alt="Hands with message" />
-      </div>
-      <div className={styles.textSide}>
-        <div className={styles.goldBlock}>
-          <p>
-            {`We are a small local team, 
+      <div className={styles.goldBlock}>
+        <p>
+          {`We are a small local team, 
 an SEO agency focused on 
 connecting You with leads, 
 phone calls, and clients. 
@@ -22,9 +18,10 @@ And we don't just leave after, our team will make consistent updates to keep you
 We stand apart through consistency, 
 and dedicated support. You are not 
 another number in the sea of clients to us, you're a human being trying to be successful.`}
-          </p>
-        </div>
-        <div className={styles.whiteBlock}></div>
+        </p>
+      </div>
+      <div className={styles.imageSide}>
+        <img src="/images/hands-with-message-1-203.png" alt="Hands with message" />
       </div>
     </section>
   );

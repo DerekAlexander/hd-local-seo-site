@@ -12,7 +12,7 @@ export default function Hero() {
       <div className={styles.heroHeader}>
         <div className={styles.heroImageContainer}>
           <Image
-            src="/images/node-269.png"
+            src="/images/node-16.png"
             alt="San Antonio Skyline"
             fill
             className={styles.heroImage}
@@ -28,7 +28,7 @@ export default function Hero() {
       </div>
       <div className={styles.seoScoringTool}>
         <Image
-          src="/images/work-messages-222.png"
+          src="/images/work-messages-21.png"
           alt="SEO Score Tool"
           width={140}
           height={140}

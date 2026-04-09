@@ -101,7 +101,7 @@ export default function Services() {
       </div>
 
       <Image
-        src="/images/evaluation-220.png"
+        src="/images/evaluation-193.png"
         alt="Evaluation"
         width={600}
         height={80}
