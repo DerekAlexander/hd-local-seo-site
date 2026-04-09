@@ -1,22 +1,25 @@
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import Hero from '@/components/sections/Hero';
 import SEOEducation from '@/components/sections/SEOEducation';
-import PricingCards from '@/components/sections/PricingCards';
-import SEOScoreTool from '@/components/sections/SEOScoreTool';
+import IncreaseOutreach from '@/components/sections/IncreaseOutreach';
+import Services from '@/components/sections/Services';
+import AboutUs from '@/components/sections/AboutUs';
 import ContactForm from '@/components/sections/ContactForm';
-
-export const metadata = {
-  title: 'Contractor SEO Services - Get More Leads',
-  description: 'SEO services specifically for local contractors. Get more leads for your roofing, HVAC, plumbing, or construction business.',
-};
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <SEOEducation />
-      <PricingCards />
-      <SEOScoreTool />
-      <ContactForm />
-    </main>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <SEOEducation />
+        <IncreaseOutreach />
+        <Services />
+        <AboutUs />
+        <ContactForm />
+      </main>
+      <Footer />
+    </>
   );
 }

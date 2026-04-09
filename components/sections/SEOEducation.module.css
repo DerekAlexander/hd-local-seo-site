@@ -1,112 +1,135 @@
+/* SEO Education Cards Section - Matching Figma node-29 */
+
 .section {
-  background-color: #ffffff;
-  padding: 80px 20px;
+  position: relative;
+  width: 100%;
+  padding: 0;
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 60px;
+.bgImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cardGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 64px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 64px;
+  width: 100%;
 }
 
 .card {
-  background: #fafafa;
-  border-radius: 8px;
-  padding: 30px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
-}
-
-.iconContainer {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 30%;
+  min-width: 280px;
 }
 
-.cardTitle {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 0 12px 0;
-  color: #1e1e1e;
-  font-family: 'Inter', sans-serif;
+.iconWrap {
+  width: 30%;
+  min-width: 60px;
 }
 
-.cardDescription {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #757575;
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-}
-
-.bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-  margin-top: 60px;
-  padding-top: 60px;
-  border-top: 1px solid #e0e0e0;
-}
-
-.bottomText {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #1e1e1e;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-}
-
-.illustration {
-  max-width: 100%;
+.iconWrap img {
+  width: 100%;
   height: auto;
 }
 
-@media (max-width: 1024px) {
-  .cards {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  flex-grow: 1;
+  width: 60%;
+  min-width: 160px;
+}
 
-  .bottom {
-    grid-template-columns: 1fr;
-    gap: 30px;
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardTitle {
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  color: rgba(30, 30, 30, 1);
+  margin: 0;
+}
+
+.cardDescription {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(117, 117, 117, 1);
+  margin: 0;
+  white-space: pre-line;
+}
+
+.bottomSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.bottomImage {
+  width: auto;
+  height: 40px;
+}
+
+.bottomText {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+@media (max-width: 1440px) {
+  .card {
+    width: 47%;
+    gap: 24px;
+  }
+  .cards {
+    gap: 64px;
   }
 }
 
 @media (max-width: 768px) {
-  .section {
-    padding: 40px 20px;
-  }
-
-  .cards {
-    gap: 15px;
-  }
-
   .card {
-    padding: 20px;
+    width: 100%;
+    min-width: 100%;
+    gap: 24px;
   }
-
-  .bottom {
-    padding-top: 40px;
-    margin-top: 40px;
+  .cards {
+    gap: 64px;
   }
-
-  .bottomText {
-    font-size: 14px;
+  .cardGrid {
+    padding: 32px 24px;
   }
 }
