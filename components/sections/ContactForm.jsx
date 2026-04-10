@@ -6,19 +6,28 @@ import styles from './ContactForm.module.css';
 export default function ContactForm() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus(null);
+    setIsLoading(true);
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-      if (res.ok) setStatus('success');
-      else setStatus('error');
+      if (res.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus('error');
+      }
     } catch {
       setStatus('error');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -55,10 +64,20 @@ export default function ContactForm() {
             required
           />
         </div>
-        <button type="submit" className={styles.submitButton}>
-          <span>Submit</span>
+        <button type="submit" className={styles.submitButton} disabled={isLoading}>
+          <span>{isLoading ? 'Sending...' : 'Submit'}</span>
         </button>
       </form>
+      {status === 'success' && (
+        <p style={{ color: 'green', marginTop: '1rem' }}>
+          Message sent! We&apos;ll get back to you soon.
+        </p>
+      )}
+      {status === 'error' && (
+        <p style={{ color: 'red', marginTop: '1rem' }}>
+          Something went wrong. Please try again.
+        </p>
+      )}
     </section>
   );
 }
