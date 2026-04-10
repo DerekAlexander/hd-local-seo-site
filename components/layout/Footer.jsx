@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.logoContainer}>
         <Image
-          src="/images/footer-logo-1-216.png"
-          alt="Footer Logo"
+          src="/images/logoblue-1-6.png"
+          alt="HydrodubShop Logo"
           width={120}
           height={40}
           className={styles.footerLogo}
