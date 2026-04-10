@@ -23,7 +23,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className={styles.section}>
+    <section id="contact" className={styles.section}>
       <h2 className={styles.title}>Contact Us</h2>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.inputGroup}>

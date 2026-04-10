@@ -168,23 +168,63 @@
   max-width: 400px;
 }
 
-.breakdownBlock p {
-  font-family: 'Inter', sans-serif;
+.breakdownTitle {
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(30, 30, 30, 1);
+  margin: 0 0 12px 0;
+}
+
+.breakdownSub {
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgba(30, 30, 30, 1);
+  margin: 16px 0 8px 0;
+}
+
+.breakdownText {
+  font-family: 'Figtree', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: rgba(0, 0, 0, 1);
-  white-space: pre-line;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 4px 0;
 }
 
-.evaluationImage {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin: 0 auto;
-  display: block;
+.breakdownList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
+
+.breakdownList li {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 1.5;
+  padding-left: 20px;
+  position: relative;
+}
+
+.breakdownList li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: rgba(94, 138, 235, 1);
+  font-weight: 700;
+}
+
+.breakdownList li strong {
+  font-weight: 700;
+  color: rgba(30, 30, 30, 1);
+}
+
 
 @media (max-width: 1440px) {
   .cardWide {

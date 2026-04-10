@@ -3,7 +3,7 @@ import path from 'path';
 
 const PAGE_SPEED_ENDPOINT =
   'https://www.googleapis.com/pagespeedonline/v5/runPagespeed';
-const REQUEST_TIMEOUT_MS = 15000;
+const REQUEST_TIMEOUT_MS = 60000;
 const SEARCHED_URLS_FILE_PATH = path.join(process.cwd(), 'searched-urls.json');
 
 function normalizeUrl(input) {
@@ -100,13 +100,15 @@ async function appendSearchedUrl(url) {
 async function fetchPageSpeedInsights(url) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  const apiKey = process.env.PAGESPEED_API_KEY;
   const requestUrl =
     `${PAGE_SPEED_ENDPOINT}?url=${encodeURIComponent(url)}` +
     '&strategy=mobile' +
     '&category=performance' +
     '&category=accessibility' +
     '&category=seo' +
-    '&category=best-practices';
+    '&category=best-practices' +
+    (apiKey ? `&key=${apiKey}` : '');
 
   try {
     return await fetch(requestUrl, {

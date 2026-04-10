@@ -27,13 +27,15 @@
   white-space: pre-line;
   line-height: 1.6;
   margin: 0;
-  width: 33%;
-  max-width: 33%;
+  width: 40%;
+  max-width: 40%;
+  text-align: left;
 }
 
 .mapEmbed {
-  width: 50%;
-  max-width: 50%;
+  width: 45%;
+  max-width: 45%;
+  aspect-ratio: 1 / 1;
   border-radius: 8px;
 }
 

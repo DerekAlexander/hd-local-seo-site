@@ -1,0 +1,22 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="300" rx="12" fill="#03191F"/>
+<!-- Handshake / people connecting -->
+<!-- Person 1 -->
+<circle cx="110" cy="110" r="20" fill="#5E8AEB"/>
+<rect x="95" y="135" width="30" height="45" rx="8" fill="#5E8AEB"/>
+<!-- Person 2 -->
+<circle cx="190" cy="110" r="20" fill="#FFC348"/>
+<rect x="175" y="135" width="30" height="45" rx="8" fill="#FFC348"/>
+<!-- Handshake shape -->
+<path d="M120 160 L140 148 L150 155 L160 148 L180 160" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<!-- Sparkle effects -->
+<circle cx="150" cy="90" r="3" fill="white" opacity="0.7"/>
+<line x1="150" y1="80" x2="150" y2="72" stroke="white" stroke-width="1.5" opacity="0.5"/>
+<line x1="142" y1="85" x2="136" y2="79" stroke="white" stroke-width="1.5" opacity="0.5"/>
+<line x1="158" y1="85" x2="164" y2="79" stroke="white" stroke-width="1.5" opacity="0.5"/>
+<!-- Base platform -->
+<rect x="70" y="200" width="160" height="6" rx="3" fill="#5E8AEB" opacity="0.4"/>
+<!-- Rising arrow -->
+<polyline points="130,230 150,210 170,230" stroke="#FFC348" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<line x1="150" y1="210" x2="150" y2="250" stroke="#FFC348" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

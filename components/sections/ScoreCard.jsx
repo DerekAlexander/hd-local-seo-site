@@ -89,7 +89,7 @@ export default function ScoreCard({ results }) {
       </div>
 
       <a href="#contact" className={styles.cta}>
-        Want a full breakdown? Get a $125 SEO Audit &rarr;
+        Want a full breakdown? Contact us &rarr;
       </a>
     </div>
   );

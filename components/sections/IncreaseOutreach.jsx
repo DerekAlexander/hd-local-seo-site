@@ -7,9 +7,9 @@ export default function IncreaseOutreach() {
     <section className={styles.section}>
       <h2 className={styles.title}>Increase outreach for your business now!</h2>
       <div className={styles.images}>
-        <img src="/images/developer-desk-3-60.png" alt="Developer desk with keyboard" />
-        <img src="/images/node-61.png" alt="SEO search engine optimization" />
-        <img src="/images/node-62.png" alt="Designing a website" />
+        <img src="/images/outreach-network.svg" alt="Outreach network connections" />
+        <img src="/images/growth-chart.svg" alt="Business growth chart" />
+        <img src="/images/business-connect.svg" alt="Business partnerships" />
       </div>
     </section>
   );

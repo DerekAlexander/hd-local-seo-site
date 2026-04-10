@@ -103,14 +103,6 @@ export default function Services() {
         ))}
       </div>
 
-      <Image
-        src="/images/evaluation-193.png"
-        alt="Evaluation"
-        width={600}
-        height={80}
-        className={styles.evaluationImage}
-      />
-
       <div className={styles.serviceInfo}>
         <div className={styles.serviceInfoDark}>
           <p className={styles.serviceInfoTableHeader}>
@@ -119,20 +111,22 @@ export default function Services() {
         </div>
         <div className={styles.breakdown}>
           <div className={styles.breakdownBlock}>
-            <p>
-              Payment{'\n'}
-              50% upfront, 50% at completion (for Website Build){'\n'}
-              **Monthly Services:**{'\n'}
+            <h2 className={styles.breakdownTitle}>Payment</h2>
+            <p className={styles.breakdownText}>
+              50% upfront, 50% at completion (for Website Build)
+            </p>
+            <h3 className={styles.breakdownSub}>Monthly Services:</h3>
+            <p className={styles.breakdownText}>
               Due on the 1st of each month
             </p>
           </div>
           <div className={styles.breakdownBlock}>
-            <p>
-              What to expect{'\n'}
-              - First 30 days: Site fixes, profile optimization, backlink foundation{'\n'}
-              - 60–90 days: Keyword ranking improvements, lead inquiry increase{'\n'}
-              - 90+ days: Consistent qualified leads from search
-            </p>
+            <h2 className={styles.breakdownTitle}>What to Expect</h2>
+            <ul className={styles.breakdownList}>
+              <li><strong>First 30 days:</strong> Site fixes, profile optimization, backlink foundation</li>
+              <li><strong>60–90 days:</strong> Keyword ranking improvements, lead inquiry increase</li>
+              <li><strong>90+ days:</strong> Consistent qualified leads from search</li>
+            </ul>
           </div>
         </div>
       </div>
