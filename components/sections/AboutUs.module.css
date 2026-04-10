@@ -32,11 +32,18 @@
   text-align: left;
 }
 
-.mapEmbed {
+.mapWrapper {
   width: 45%;
   max-width: 45%;
   aspect-ratio: 1 / 1;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.mapEmbed {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @media (max-width: 768px) {
@@ -45,7 +52,7 @@
     padding: 40px 24px;
   }
   .goldBlock p,
-  .mapEmbed {
+  .mapWrapper {
     width: 100%;
     max-width: 100%;
   }
