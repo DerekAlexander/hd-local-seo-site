@@ -4,12 +4,11 @@
   position: relative;
   width: 100%;
   padding: 0;
-}
-
-.bgImage {
-  width: 100%;
-  height: auto;
-  display: block;
+  min-height: 520px;
+  background-image: url('/images/rectangle-69-30.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cardGrid {
@@ -20,7 +19,9 @@
   padding: 64px;
   margin: 0 auto;
   max-width: 1200px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .cards {

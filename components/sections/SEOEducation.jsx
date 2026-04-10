@@ -24,14 +24,6 @@ const cards = [
 export default function SEOEducation() {
   return (
     <section className={styles.section}>
-      <Image
-        src="/images/rectangle-69-30.png"
-        alt="Section background"
-        width={1920}
-        height={200}
-        className={styles.bgImage}
-        priority
-      />
       <div className={styles.cardGrid}>
         <div className={styles.cards}>
           {cards.map((card, i) => (
