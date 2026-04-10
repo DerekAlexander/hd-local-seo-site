@@ -75,7 +75,7 @@ const pricingCards = [
 
 export default function Services() {
   return (
-    <section className={styles.section}>
+    <section id="services" className={styles.section}>
       <h2 className={styles.title}>Services</h2>
       <div className={styles.cards}>
         {pricingCards.map((card, i) => (
