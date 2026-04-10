@@ -14,7 +14,7 @@ phone calls, and clients.
 
 We audit your online presence,
 find what's broken, then fix it.
-We don't just leave after —
+We don't just leave after.
 our team makes consistent
 updates to keep you visible
 in the Google rankings.
@@ -22,7 +22,7 @@ in the Google rankings.
 We stand apart through
 consistency and dedicated
 support. You're not another
-number to us — you're a human
+number to us, you're a human
 being trying to be successful.`}
         </p>
         <div className={styles.mapWrapper}>
