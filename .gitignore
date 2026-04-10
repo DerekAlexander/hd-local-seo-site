@@ -3,3 +3,4 @@ node_modules
 .env.local
 .env.*.local
 *.pem
+openclaw-access-project-489413-acc6928fe81b.json
