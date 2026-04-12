@@ -96,7 +96,7 @@ async function appendToGoogleSheets({ name, email, message }) {
 
     await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: 'Leads!A:D',
+      range: 'Sheet1!A:D',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [[new Date().toISOString(), name, email, message]],
