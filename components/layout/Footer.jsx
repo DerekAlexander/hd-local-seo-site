@@ -21,10 +21,10 @@ export default function Footer() {
       <div className={styles.links}>
         <a href="#about" className={styles.link}>about</a>
         <a href="#services" className={styles.link}>services</a>
-        <a href="#portfolio" className={styles.link}>portfolio</a>
+        <a href="#services" className={styles.link}>services</a>
       </div>
       <p className={styles.copyright}>
-        Copyright © 2025 HydrodubShop LLC- All Rights Reserved.
+        Copyright © 2026 HydrodubShop LLC - All Rights Reserved.
       </p>
     </footer>
   );

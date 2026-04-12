@@ -4,26 +4,21 @@ import styles from './AboutUs.module.css';
 
 export default function AboutUs() {
   return (
-    <section className={styles.section}>
+    <section id="about" className={styles.section}>
       <div className={styles.goldBlock}>
-        <p>
-          {`We are a small local team,
-an SEO agency focused on
-connecting you with leads,
-phone calls, and clients.
-
-We audit your online presence,
-find what's broken, then fix it.
-We don't just leave after.
-our team makes consistent
-updates to keep you visible
-in the Google rankings.
-
-We stand apart through
-consistency and dedicated
-support. You're not another
-number to us, you're a human
-being trying to be successful.`}
+        <h2 className={styles.aboutTitle}>About HydrodubShop SEO</h2>
+        <p className={styles.aboutText}>
+          We are a small local team in San Antonio, an SEO agency focused on
+          connecting you with leads, phone calls, and clients.
+        </p>
+        <p className={styles.aboutText}>
+          We audit your online presence, find what&apos;s broken, then fix it.
+          We don&apos;t just leave after. Our team makes consistent updates to
+          keep you visible in the Google rankings.
+        </p>
+        <p className={styles.aboutText}>
+          We stand apart through consistency and dedicated support. You&apos;re
+          not another number to us - you&apos;re a human being trying to be successful.
         </p>
         <div className={styles.mapWrapper}>
           <iframe

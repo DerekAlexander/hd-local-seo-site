@@ -55,6 +55,15 @@ const articles = [
   },
 ];
 
+export const metadata = {
+  title: 'SEO Articles & Guides - HydrodubShop SEO',
+  description:
+    'Free SEO guides and articles for local businesses. Learn about local SEO, Google Business Profile, backlinks, schema markup, and more.',
+  alternates: {
+    canonical: 'https://hydrodubshopseo.com/articles',
+  },
+};
+
 export default function ArticlesPage() {
   return (
     <>
@@ -67,9 +76,7 @@ export default function ArticlesPage() {
               <article key={article.title} className={styles.card}>
                 <h3 className={styles.cardTitle}>{article.title}</h3>
                 <p className={styles.cardDescription}>{article.description}</p>
-                <a href="#" className={styles.readMore}>
-                  Read More &rarr;
-                </a>
+                <span className={styles.readMore}>Coming Soon</span>
               </article>
             ))}
           </div>

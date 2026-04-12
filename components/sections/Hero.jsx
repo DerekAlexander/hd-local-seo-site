@@ -59,9 +59,9 @@ export default function Hero() {
             priority
           />
           <div className={styles.heroOverlay}>
-            <p className={styles.heroSubtext}>Start with an audit.</p>
+            <p className={styles.heroSubtext}>Free SEO audit for your business.</p>
             <h1 className={styles.heroHeading}>
-              Ready To See Where your Business stands?
+              San Antonio Local SEO Services That Get You Found
             </h1>
           </div>
         </div>
