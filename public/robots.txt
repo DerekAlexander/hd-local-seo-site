@@ -1,0 +1,5 @@
+# robots.txt for hydrodubshopseo.com
+User-agent: *
+Allow: /
+
+Sitemap: https://hydrodubshopseo.com/sitemap.xml
