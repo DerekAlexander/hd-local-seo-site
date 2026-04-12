@@ -17,11 +17,11 @@ export default function Header() {
           priority
         />
         <nav className={styles.nav}>
-          <a href="#services" className={styles.navLink}>Services</a>
-          <a href="#about" className={styles.navLinkAlt}>About</a>
+          <a href="/#services" className={styles.navLink}>Services</a>
+          <a href="/#about" className={styles.navLinkAlt}>About</a>
           <a href="/articles" className={styles.navLink}>Articles</a>
         </nav>
-        <a href="#contact" className={styles.contactButton}>
+        <a href="/#contact" className={styles.contactButton}>
           <span className={styles.contactText}>Contact Us</span>
         </a>
       </header>
