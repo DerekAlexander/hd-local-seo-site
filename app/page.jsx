@@ -3,6 +3,9 @@ import Footer from '@/components/layout/Footer';
 import Hero from '@/components/sections/Hero';
 import SEOEducation from '@/components/sections/SEOEducation';
 import OutreachCTA from '@/components/sections/OutreachCTA';
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 import Services from '@/components/sections/Services';
 import AboutUs from '@/components/sections/AboutUs';
 import ContactForm from '@/components/sections/ContactForm';

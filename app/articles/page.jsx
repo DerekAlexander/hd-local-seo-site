@@ -4,6 +4,9 @@ import styles from './page.module.css';
 import { getPayload } from 'payload';
 import config from '@payload-config';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const metadata = {
   title: 'SEO Articles & Guides - HydrodubShop SEO',
   description:
