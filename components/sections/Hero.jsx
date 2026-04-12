@@ -5,7 +5,10 @@ import Image from 'next/image';
 import { useState } from 'react';
 import ScoreCard from './ScoreCard';
 
-export default function Hero() {
+const DEFAULT_TITLE = 'San Antonio Local SEO Services That Get You Found';
+const DEFAULT_SUBTITLE = 'Free SEO audit for your business.';
+
+export default function Hero({ title = DEFAULT_TITLE, subtitle = DEFAULT_SUBTITLE }) {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
@@ -59,9 +62,9 @@ export default function Hero() {
             priority
           />
           <div className={styles.heroOverlay}>
-            <p className={styles.heroSubtext}>Free SEO audit for your business.</p>
+            <p className={styles.heroSubtext}>{subtitle}</p>
             <h1 className={styles.heroHeading}>
-              San Antonio Local SEO Services That Get You Found
+              {title}
             </h1>
           </div>
         </div>

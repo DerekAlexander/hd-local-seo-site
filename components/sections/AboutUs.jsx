@@ -2,24 +2,25 @@
 
 import styles from './AboutUs.module.css';
 
-export default function AboutUs() {
+const DEFAULT_TITLE = 'About HydrodubShop SEO';
+const DEFAULT_BODY = [
+  'We are a small local team in San Antonio, an SEO agency focused on connecting you with leads, phone calls, and clients.',
+  "We audit your online presence, find what's broken, then fix it. We don't just leave after. Our team makes consistent updates to keep you visible in the Google rankings.",
+  "We stand apart through consistency and dedicated support. You're not another number to us - you're a human being trying to be successful.",
+];
+
+export default function AboutUs({ title = DEFAULT_TITLE, body = DEFAULT_BODY }) {
+  const paragraphs = Array.isArray(body) && body.length > 0 ? body : DEFAULT_BODY;
+
   return (
     <section id="about" className={styles.section}>
       <div className={styles.goldBlock}>
-        <h2 className={styles.aboutTitle}>About HydrodubShop SEO</h2>
-        <p className={styles.aboutText}>
-          We are a small local team in San Antonio, an SEO agency focused on
-          connecting you with leads, phone calls, and clients.
-        </p>
-        <p className={styles.aboutText}>
-          We audit your online presence, find what&apos;s broken, then fix it.
-          We don&apos;t just leave after. Our team makes consistent updates to
-          keep you visible in the Google rankings.
-        </p>
-        <p className={styles.aboutText}>
-          We stand apart through consistency and dedicated support. You&apos;re
-          not another number to us - you&apos;re a human being trying to be successful.
-        </p>
+        <h2 className={styles.aboutTitle}>{title}</h2>
+        {paragraphs.map((paragraph, index) => (
+          <p key={index} className={styles.aboutText}>
+            {paragraph}
+          </p>
+        ))}
         <div className={styles.mapWrapper}>
           <iframe
             className={styles.mapEmbed}

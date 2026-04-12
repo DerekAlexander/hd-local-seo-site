@@ -1,7 +1,9 @@
 import styles from './Footer.module.css';
 import Image from 'next/image';
 
-export default function Footer() {
+const DEFAULT_FOOTER_TEXT = 'Copyright © 2026 HydrodubShop LLC - All Rights Reserved.';
+
+export default function Footer({ footerText = DEFAULT_FOOTER_TEXT }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.logoContainer}>
@@ -23,9 +25,7 @@ export default function Footer() {
         <a href="#services" className={styles.link}>services</a>
         <a href="#services" className={styles.link}>services</a>
       </div>
-      <p className={styles.copyright}>
-        Copyright © 2026 HydrodubShop LLC - All Rights Reserved.
-      </p>
+      <p className={styles.copyright}>{footerText}</p>
     </footer>
   );
 }

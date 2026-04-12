@@ -3,11 +3,15 @@
 import Image from 'next/image';
 import styles from './SEOEducation.module.css';
 
-const cards = [
+const DEFAULT_TITLE = 'What Is SEO?';
+const DEFAULT_BODY =
+  'SEO (Search Engine Optimization) is how your business shows up when people Google "roofing near me" or "emergency plumber." It\'s free visibility-no ads, no monthly bills to Google.';
+
+const baseCards = [
   {
     icon: '/images/icon-35.svg',
-    title: 'What Is SEO?',
-    description: 'SEO (Search Engine Optimization) is how your business shows up when people Google "roofing near me" or "emergency plumber." It\'s free visibility—no ads, no monthly bills to Google.',
+    title: DEFAULT_TITLE,
+    description: DEFAULT_BODY,
   },
   {
     icon: '/images/icon-42.svg',
@@ -21,7 +25,16 @@ const cards = [
   },
 ];
 
-export default function SEOEducation() {
+export default function SEOEducation({ title = DEFAULT_TITLE, body = DEFAULT_BODY }) {
+  const cards = [
+    {
+      ...baseCards[0],
+      title: title || DEFAULT_TITLE,
+      description: body || DEFAULT_BODY,
+    },
+    ...baseCards.slice(1),
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.cardGrid}>

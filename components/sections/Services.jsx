@@ -1,6 +1,4 @@
 'use client';
-
-import Image from 'next/image';
 import styles from './Services.module.css';
 
 const pricingCards = [
@@ -73,12 +71,26 @@ const pricingCards = [
   },
 ];
 
-export default function Services() {
+export default function Services({ services = pricingCards }) {
+  const normalizedCards =
+    Array.isArray(services) && services.length > 0
+      ? services.map((service) => ({
+          ...service,
+          title: service?.title || '',
+          price: service?.price || '$0',
+          features: Array.isArray(service?.features)
+            ? service.features
+            : [],
+          per: service?.per,
+          tier: service?.tier,
+        }))
+      : pricingCards;
+
   return (
     <section id="services" className={styles.section}>
       <h2 className={styles.title}>Services</h2>
       <div className={styles.cards}>
-        {pricingCards.map((card, i) => (
+        {normalizedCards.map((card, i) => (
           <div
             key={i}
             className={`${styles.card} ${i < 2 ? styles.cardWide : styles.cardNarrow}`}
