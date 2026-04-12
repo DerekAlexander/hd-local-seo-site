@@ -2,6 +2,7 @@
   "name": "contractor-seo-website",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,15 +13,20 @@
     "@payloadcms/db-postgres": "^3.82.1",
     "@payloadcms/next": "^3.82.1",
     "@payloadcms/richtext-lexical": "^3.82.1",
+    "@payloadcms/ui": "^3.82.1",
+    "cross-env": "^10.1.0",
     "googleapis": "^171.4.0",
     "graphql": "^16.13.2",
     "next": "15.4.11",
+    "payload": "^3.82.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sharp": "^0.34.5"
   },
   "devDependencies": {
+    "@types/react": "19.2.14",
     "eslint": "^8.50.0",
-    "eslint-config-next": "^15.0.0"
+    "eslint-config-next": "^15.0.0",
+    "typescript": "6.0.2"
   }
 }
